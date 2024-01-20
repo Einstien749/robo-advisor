@@ -1,0 +1,69 @@
+.plancard {
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 4px #fafafa;
+    padding: 10px;
+}
+.plancard > div{
+    height: 150px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 15% 75%;
+    grid-column-gap: 10%;
+}
+.plancard > div > img{
+    width: 80%;
+    margin-left: 10%;
+    height: 150px;
+    object-fit: contain;
+}
+.plancard h4{
+    font-style: italic;
+}
+.section3 > div{
+    display: grid;
+    width: 90%;
+    margin-left: 5%;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 10px 0 10px;
+}
+.section3 button {
+    background-image: url("../../../../../static/images/icons8-arrow-30.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--primary_color);
+}
+.section3 h2{
+    text-align: center;
+    font-style: italic;
+}
+.section3 button:hover{
+    background-color: var(--secondary_color);
+}
+
+@media screen and (max-width: 900px) {
+    .section3 > div{
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .section3 > div img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .plancard{
+        margin-top: 20px;
+    }
+    .plancard > div{
+        grid-column-gap: 20px;
+    }
+    
+}

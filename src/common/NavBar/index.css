@@ -1,0 +1,115 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+nav a {
+    color: var(--primary_black);
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+button{
+    border-radius: 50px;
+    height: 40px;
+    padding: 16px, 20px, 16px, 20px;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.signin-button{
+    border: 2px var(--primary_color) solid;
+    color: var(--primary_black);
+    width: 110px;
+    background-color: var(--primary_white);
+    font-size: 11px;
+    line-height: 15.4px;
+}
+.create-account-button{
+    background-color: var(--primary_color);
+    color: var(--primary_white);
+    border: 0px;
+    width: 160px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 18px;
+}
+nav > img{
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+}
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 420px
+}
+nav > button{
+    display: none;
+    background-image: url("../../static/images/small-menu-colored.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 0;
+    width: 70px;
+    height: 50px;
+    background-color: #FFFFFF;
+}
+
+.mobile_nav{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000000;
+    overflow: hidden;
+    color: var(--primary_white);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mobile_nav .navLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    padding: 0;
+    margin-top: 10px;
+}
+.mobile_nav a{
+    color: var(--ash_color);
+    font-weight: 500;
+    padding: 0;
+}
+.mobile_nav .create-account-button{
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+@media screen and (max-width : 900px) {
+    nav div {
+        display: none;
+    }
+    .navLinks{
+        display: none;
+    }
+    nav > button {
+        display: block;
+    }
+    nav{
+        padding: 20px 10px 20px 10px;       
+    }
+}

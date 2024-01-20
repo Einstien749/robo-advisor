@@ -1,0 +1,19 @@
+.landingpage{
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 1400px) {
+    .landingpage{
+        width: 1200px;
+        margin-left: calc(50% - 600px);
+    }
+    
+}
+
+@media screen and (min-width: 1700px) {
+    .landingpage{
+        width: 1500px;
+        margin-left: calc(50% - 800px);
+    }
+    
+}
