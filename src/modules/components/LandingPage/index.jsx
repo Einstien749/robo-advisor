@@ -10,7 +10,7 @@ const LandingPage = () => {
   const [portfolios, setPortfolios] = useState([]);
   const [open, setOpen] =useState(false);
   const getData = useCallback(async () => {
-    let response = await fetch("http://localhost:8000/home/")
+    let response = await fetch("https://eu-central-1.aws.data.mongodb-api.com/app/my-app-sszri/endpoint/all_portfoilio")
       .then((res) => {
         return res.json();
       })
